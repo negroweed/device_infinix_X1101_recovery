@@ -107,7 +107,7 @@ TARGET_BOARD_PLATFORM := mt6789
 BOARD_VNDK_VERSION := current
 
 # Properties
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
