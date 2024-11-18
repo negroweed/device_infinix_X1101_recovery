@@ -80,8 +80,8 @@ jobs:
     - name: Install OpenJDK
       uses: actions/setup-java@v4
       with:
-        distribution: 'zulu'
-        java-version: '8'
+        distribution: 'oracle'
+        java-version: '21'
 
     - name: Install Git-Repo
       run: |
@@ -131,7 +131,7 @@ jobs:
         fi
       continue-on-error: true
 
-    - name: Building Image 
+    - name: Build Recovery
       run: |
         cd android-recovery
         source build/envsetup.sh
@@ -143,7 +143,7 @@ jobs:
       run: |
         echo "BUILD_DATE=$(date +%Y%m%d)" >> $GITHUB_ENV
 
-    - name: Upload to Release (if vendor_boot)
+    - name: Upload to Release
       uses: softprops/action-gh-release@v2
       with:
         files: |
