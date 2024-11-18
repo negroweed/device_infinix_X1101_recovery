@@ -1,8 +1,8 @@
 # Fstab
 ro.postinstall.fstab.prefix=/system
 
-# USB MTP
-ro.sys.usb.storage.type=mtp
+# USB MTP ADB
+ro.sys.usb.storage.type=mtp,adb
 
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
