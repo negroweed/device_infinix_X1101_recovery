@@ -4,7 +4,7 @@
         vendor/transsion/hardware/interfaces/transsion_device_framework_matrix.xml
         vendor/transsion/tranfac/TranfacSys/aidl/device_framework_matrix_tranfacaidl.xml
 -->
-<compatibility-matrix version="7.0" type="framework">
+<compatibility-matrix version="4.0" type="framework">
     <hal format="aidl" optional="true">
         <name>android.hardware.biometrics.fingerprint</name>
         <version>3</version>
