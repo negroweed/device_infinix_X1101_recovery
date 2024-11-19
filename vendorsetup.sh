@@ -12,5 +12,6 @@ if ! git am -3 <$p; then
         exit 1
     }
 fi
+done
 
 cd ../../
