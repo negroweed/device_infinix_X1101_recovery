@@ -32,6 +32,11 @@
         <transport>hwbinder</transport>
         <fqname>@1.1::INetd/default</fqname>
     </hal>
+    <hal format="aidl">
+        <name>android.system.keystore2</name>
+        <version>1</version>
+        <fqname>IKeystoreService/default</fqname>
+    </hal>
     <hal format="hidl" max-level="7">
         <name>android.system.wifi.keystore</name>
         <transport>hwbinder</transport>
