@@ -27,7 +27,7 @@ on:
       DEVICE_NAME:
         description: 'Specify your Device Codename' # As is, just like your PRODUCT_DEVICE in your device tree.
         required: true
-        default: 'Infinix-X1101'
+        default: 'X1101'
       BUILD_TARGET:
         description: 'Specify your Build Target' # Pick among boot, recovery and vendor_boot
         required: true
@@ -127,9 +127,8 @@ jobs:
         elif [ -f ${{ github.event.inputs.DEVICE_PATH }}/omni_${{ github.event.inputs.DEVICE_NAME}}.mk ]; then
             echo "DEVICE_MAKEFILE=omni_${{ github.event.inputs.DEVICE_NAME }}" >> $GITHUB_ENV
         else
-            echo "No recovery makefile file found!"
+            exit 1
         fi
-      continue-on-error: true
 
     - name: Build Recovery
       run: |
