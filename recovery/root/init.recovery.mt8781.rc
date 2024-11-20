@@ -24,7 +24,7 @@ on early-fs
 
 on late-fs
     # Mount RW partitions which need run fsck
-    mount_all /first_stage_ramdisk/fstab.mt6789 --late
+    mount_all /first_stage_ramdisk/fstab.mt8781 --late
 
 on post-fs
     start boot-hal-1-2
@@ -120,5 +120,5 @@ on post-fs-data
     mkdir /data/vendor_de/0/cryptoeng 0770 system system
 
     start health-hal-2-1
-    setprop sys.usb.config adb
+    setprop sys.usb.config mtp,adb
 
