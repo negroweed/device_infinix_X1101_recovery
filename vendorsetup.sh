@@ -2,7 +2,7 @@
 export LC_ALL="C"
 cd bootable/recovery
 
-for p in ../../device/infinix/Infinix-X1101/patches/*; do
+for p in ../../device/infinix/Infinix-XPAD/patches/*; do
 if ! git am -3 <$p; then
     # Force use fuzzy patch
     patch -p1 <$p

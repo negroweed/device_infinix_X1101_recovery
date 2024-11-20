@@ -4,10 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/infinix/Infinix-X1101
+DEVICE_PATH := device/infinix/Infinix-XPAD
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := Infinix-X1101
+TARGET_OTA_ASSERT_DEVICE := Infinix-XPAD
 
 # Architecture
 TARGET_ARCH := arm64
