@@ -152,3 +152,5 @@ TW_LOAD_VENDOR_BOOT_MODULES := true
 TW_HAS_MTP := true
 TW_USB_STORAGE := true
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone29"
+TW_CUSTOM_BATTERY_PATH := "/sys/devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt6358-gauge/power_supply/battery/capacity"
