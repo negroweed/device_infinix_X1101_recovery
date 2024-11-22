@@ -1,5 +1,6 @@
 import /init.tee.rc
 import /init.custom.rc
+import /init.vibrator.rc
 
 on init
     setprop sys.usb.configfs 1
@@ -120,3 +121,4 @@ on post-fs-data
 
     start health-hal-2-1
     setprop sys.usb.config mtp,adb
+
